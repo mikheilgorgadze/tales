@@ -20,6 +20,7 @@ body {
     font-family: var(--font-family);
 }
 
+
 .tale-body {
     background-color: var(--secondary-color);
     color: var(--main-color);
@@ -31,6 +32,7 @@ body {
     padding: 1rem;
     position: relative;
 }
+
 
 .cartoon-image {
     border-radius: 10px;

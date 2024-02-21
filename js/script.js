@@ -1,18 +1,18 @@
-// let image = document.getElementById("nala-image");
-// let button = document.getElementById("next-button");
-// let resized = false;
-// let originalWidth = image.clientWidth;
-// let originalHeight = image.clientHeight;
-// button.addEventListener('click', function(){
-//         if (!resized) {
-//             image.style.height = '400px';
-//             image.style.width = '400px';
-//             resized = true;
-//         }
-//         else {
-//             image.style.height = originalHeight + 'px';
-//             image.style.width = originalWidth + 'px';
-//             console.log(originalHeight, originalWidth);
-//             resized = false;
-//         }
-//     })
+let taleElements = document.querySelectorAll(".tale-element");
+let button = document.getElementById("next-button");
+let clicked = true;
+
+button.addEventListener('click', function (){
+    if (clicked) {
+        for (let i = 0; i < taleElements.length; i++) {
+            taleElements[i].style.display = 'none';
+        }
+        clicked = false;
+    }
+    else {
+        for (let i = 0; i < taleElements.length; i++) {
+            taleElements[i].style.display = 'block';
+        }
+        clicked = true;
+    }
+})
